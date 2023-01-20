@@ -30,40 +30,35 @@ function Starships() {
                         <h2 className="mb-3">{starship.name}</h2>
                         <p style={{ fontSize: 20 }}>
                             <span style={{ fontWeight: 900 }}>
-                                Climate:&nbsp;
+                                Model:&nbsp;
                             </span>
                             {
-                                starship.climate.charAt(0).toUpperCase() +
-                                starship.climate.slice(1)
+                                starship.model
                             }
                         </p>
                         <p style={{ fontSize: 20 }}>
                             <span style={{ fontWeight: 900 }}>
-                                Gravity:&nbsp;
+                                Manufacturer:&nbsp;
                             </span>
                             {
-                                starship.gravity
+                                starship.manufacturer
                             }
                         </p>
                         <p style={{ fontSize: 20 }}>
                             <span style={{ fontWeight: 900 }}>
-                                Terrain:&nbsp;
+                                Hyperdrive Rating:&nbsp;
                             </span>
                             {
-                                starship.terrain.charAt(0).toUpperCase() +
-                                starship.terrain.slice(1)
+                                starship.hyperdrive_rating
                             }
-                            &nbsp;years
                         </p>
                         <p style={{ fontSize: 20 }}>
                             <span style={{ fontWeight: 900 }}>
-                                Population:&nbsp;
+                                Starship Class:&nbsp;
                             </span>
                             {
-                                starship.population === 'unknown' ?
-                                    starship.population.charAt(0).toUpperCase() +
-                                    starship.population.slice(1) :
-                                    starship.population
+                                starship.starship_class.charAt(0).toUpperCase() +
+                                starship.starship_class.slice(1)
                             }
                         </p>
                     </div>
