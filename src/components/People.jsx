@@ -19,7 +19,8 @@ function People() {
                 navigate('/error');
             }
             );
-    }, [id, navigate]);
+        // eslint-disable-next-line
+    }, [id]);
 
     return (
         <>

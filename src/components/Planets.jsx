@@ -19,7 +19,8 @@ function Planets() {
                 navigate('/error');
             }
             );
-    }, [id, navigate]);
+        // eslint-disable-next-line
+    }, [id]);
 
     return (
         <>
@@ -60,10 +61,10 @@ function Planets() {
                                 Population:&nbsp;
                             </span>
                             {
-                                planet.population === 'unknown'?
-                                planet.population.charAt(0).toUpperCase() +
-                                planet.population.slice(1):
-                                planet.population
+                                planet.population === 'unknown' ?
+                                    planet.population.charAt(0).toUpperCase() +
+                                    planet.population.slice(1) :
+                                    planet.population
                             }
                         </p>
                     </div>

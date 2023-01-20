@@ -19,7 +19,8 @@ function Species() {
                 navigate('/error');
             }
             );
-    }, [id, navigate]);
+        // eslint-disable-next-line
+    }, [id]);
 
     return (
         <>
@@ -48,21 +49,21 @@ function Species() {
                         </p>
                         <p style={{ fontSize: 20 }}>
                             <span style={{ fontWeight: 900 }}>
-                                Avg Lifespan:&nbsp; 
-                                </span>
-                                {
+                                Avg Lifespan:&nbsp;
+                            </span>
+                            {
                                 oneSpecies.average_lifespan
-                                }
-                                &nbsp;years
-                                </p>
+                            }
+                            &nbsp;years
+                        </p>
                         <p style={{ fontSize: 20 }}>
                             <span style={{ fontWeight: 900 }}>
                                 Language:&nbsp;
-                                </span>
-                                {
+                            </span>
+                            {
                                 oneSpecies.language
-                                }
-                                </p>
+                            }
+                        </p>
                     </div>
                 </>
                 )}
